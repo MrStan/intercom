@@ -1,7 +1,6 @@
 export function ClosestCustomer(customers, lat, long) {
     const earthRadius = 6371;
     let closeCustomer = [];
-    if (typeof customer !== 'undefined') {
         customers.forEach(customer => {
             let distance = earthRadius *
                 (
@@ -21,7 +20,6 @@ export function ClosestCustomer(customers, lat, long) {
                 closeCustomer.push({ Customer_id: customer.user_id, Customer_name: customer.name });
             }
         });
-    }
 
     return closeCustomer;
 }
