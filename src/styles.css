@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.grid > span {
+  display: flex;
+  justify-content: center;
+  padding: 8px 4px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.grid > span:nth-child(-n+3) {
+  color:white;
+  background:cornflowerblue;
+  font-weight: bold;
+}
+.grid > span:nth-child(6n+7), span:nth-child(6n+8), span:nth-child(6n+9) {
+  background: gainsboro;
+}
+@media (min-width: 1024px) {
+  .grid {
+    margin: 20px 20vw;
+  }
+}
