@@ -2,7 +2,7 @@ import { GetJSON } from "./components/get-clients-list/get-json.js";
 import { ClosestCustomer } from "./components/process-list/closest-customer.js"
 import { DisplayResult } from "./components/display-list/display-result.js"
 
-const url = "src/lib/customerss.txt";
+const url = "src/lib/customers.txt";
 const lat = 53.339428;
 const long = -6.257664;
 
